@@ -1,6 +1,8 @@
 # CommII_LabB1_G4
 Laboratorio de comunicaciones II
+
 -David Josué Díaz Ortiz, 2204269, Estudiante Ing. Electrónica.
+
 -Duban Yesid Cortes Tabares, 2214644, Estudiante Ing. Electrónica.
 
 
