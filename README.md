@@ -1,5 +1,10 @@
 # CommII_LabB1_G4
 Laboratorio de comunicaciones II
+David Josué Díaz Ortiz, 2204269, Estudiante Ing. Electrónica,
+Duban Yesid Cortes Tabares, 2214644, Estudiante Ing. Electrónica
+
+# CommII_LabB1_G4
+Laboratorio de comunicaciones II
 
 # Práctica 5 – Modulación M-QAM
 
@@ -39,5 +44,5 @@ Las figuras obtenidas incluyen constelaciones, espectros de potencia y señales 
 
 ## 🔗 Enlace al repositorio
 
-> [https://github.com/USUARIO/Practica_5](https://github.com/USUARIO/Practica_5)
+> [https://github.com/David2204269/CommII_LabB1_G4.git)
 
