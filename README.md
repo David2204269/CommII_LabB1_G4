@@ -42,7 +42,7 @@ Las figuras obtenidas incluyen constelaciones, espectros de potencia y señales 
 - **Git y GitHub** – control de versiones y alojamiento del proyecto.  
 - **Python** – análisis y procesamiento de datos complementarios.
 
-## 🔗 Enlace al repositorio
+## Enlace al repositorio
 
 > [https://github.com/David2204269/CommII_LabB1_G4.git)
 
