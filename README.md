@@ -9,8 +9,7 @@ Laboratorio de comunicaciones II
 # Práctica 5 – Modulación M-QAM
 
 ## Descripción general
-Esta práctica desarrolla la implementación y análisis de la **modulación M-QAM (Quadrature Amplitude Modulation)** utilizando la plataforma **GNU Radio**.  
-El propósito es analizar el comportamiento de las señales digitales moduladas con diferentes órdenes de modulación, así como comparar su desempeño en presencia de ruido, tanto en banda base como en su versión pasabanda.
+Esta práctica desarrolla la implementación y análisis de la **modulación M-QAM (Quadrature Amplitude Modulation)** utilizando la plataforma **GNU Radio**.  El propósito es analizar el comportamiento de las señales digitales moduladas con diferentes órdenes de modulación, así como comparar su desempeño en presencia de ruido, tanto en banda base como en su versión pasabanda.
 
 ## Objetivos
 
