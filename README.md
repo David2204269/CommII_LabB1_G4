@@ -8,8 +8,7 @@ Laboratorio de comunicaciones II
 # Práctica 4 – Modulación M-PSK
 
 ## Descripción general
-Esta práctica presenta la implementación de la **modulación M-PSK (Phase Shift Keying)** utilizando **GNU Radio**, con el objetivo de comprender la representación de símbolos digitales mediante variaciones de fase.  
-La práctica se desarrolla completamente en software, incorporando la **envolvente compleja** y los conceptos de constelación, ancho de banda y relación símbolo-bit.
+Esta práctica presenta la implementación de la **modulación M-PSK (Phase Shift Keying)** utilizando **GNU Radio**, con el objetivo de comprender la representación de símbolos digitales mediante variaciones de fase. La práctica se desarrolla completamente en software, incorporando la **envolvente compleja** y los conceptos de constelación, ancho de banda y relación símbolo-bit.
 
 ##  Objetivos
 
@@ -32,9 +31,7 @@ La práctica se desarrolla completamente en software, incorporando la **envolven
 
 ## Descripción de la práctica
 
-La práctica desarrolla un sistema digital que implementa la **modulación M-PSK** empleando bloques de **GNU Radio**.  
-Se genera una señal portadora mediante un bloque **VCO** y se modula la fase de acuerdo con una tabla de verdad programada manualmente.  
-Posteriormente, se obtiene la **envolvente compleja** de la señal y se analiza su **espectro de potencia**, identificando los puntos donde el espectro pasa por cero y su relación con la **rata de símbolos**.  
+La práctica desarrolla un sistema digital que implementa la **modulación M-PSK** empleando bloques de **GNU Radio**. Se genera una señal portadora mediante un bloque **VCO** y se modula la fase de acuerdo con una tabla de verdad programada manualmente. Posteriormente, se obtiene la **envolvente compleja** de la señal y se analiza su **espectro de potencia**, identificando los puntos donde el espectro pasa por cero y su relación con la **rata de símbolos**.  
 
 También se implementa una **modulación Q-PSK**, repitiendo el proceso de análisis y comparación con la M-PSK inicial, para observar variaciones en el desempeño espectral y temporal.
 
