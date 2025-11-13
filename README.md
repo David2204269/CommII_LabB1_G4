@@ -9,8 +9,7 @@ Laboratorio de comunicaciones II
 # Práctica 6 – Waveforming con Filtro Coseno Alzado  
 
 ## Descripción general  
-Esta práctica tiene como objetivo la implementación y análisis del **formador de pulsos basado en el Filtro Coseno Alzado (Raised Cosine Filter)** dentro del entorno **GNU Radio Companion (GRC)**.  
-El propósito es estudiar cómo la forma del filtro afecta la eficiencia espectral, la interferencia intersimbólica (ISI) y la calidad general de la señal modulada, tanto en presencia como en ausencia de ruido.  
+Esta práctica tiene como objetivo la implementación y análisis del **formador de pulsos basado en el Filtro Coseno Alzado (Raised Cosine Filter)** dentro del entorno **GNU Radio Companion (GRC)**. El propósito es estudiar cómo la forma del filtro afecta la eficiencia espectral, la interferencia intersimbólica (ISI) y la calidad general de la señal modulada, tanto en presencia como en ausencia de ruido.  
 
 El laboratorio aborda tanto el **filtro Coseno Alzado (RC)** como su variante **Raíz de Coseno Alzado (RRC)**, comparando su efecto sobre el ancho de banda, el diagrama de ojo, la constelación y la densidad espectral de potencia (PSD).
 
@@ -40,8 +39,7 @@ El laboratorio aborda tanto el **filtro Coseno Alzado (RC)** como su variante **
 
 ## Descripción de la práctica  
 
-El experimento se centra en el diseño y evaluación de señales moduladas bajo distintos esquemas de **waveforming**, utilizando filtros rectangulares, coseno alzado y raíz de coseno alzado.  
-Se analizan las siguientes configuraciones experimentales:
+El experimento se centra en el diseño y evaluación de señales moduladas bajo distintos esquemas de **waveforming**, utilizando filtros rectangulares, coseno alzado y raíz de coseno alzado. Se analizan las siguientes configuraciones experimentales:
 
 1. **Forma rectangular sin filtrado**, sin ruido.  
 2. **Forma rectangular con filtrado (BW = Rs)**, observando la aparición de ISI.  
