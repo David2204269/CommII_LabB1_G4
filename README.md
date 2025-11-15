@@ -1,59 +1,72 @@
-# CommII_LabB1_G4
-Laboratorio de comunicaciones II
+# CommII_LabB1_G4  
+Laboratorio de comunicaciones II  
 
-Repositorio principal de las prácticas de laboratorio del curso **Comunicaciones II** – Grupo B1  
-Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones  
-Universidad Industrial de Santander (UIS)
-
----
-
-## 👥 Integrantes del grupo
-- **David Josué Díaz Ortiz** — 2204269 — Estudiante de Ingeniería Electrónica  
-- **Duban Yesid Cortes Tabares** — 2214644 — Estudiante de Ingeniería Electrónica  
+  - David Josué Díaz Ortiz, 2204269, Estudiante Ing. Electrónica.  
+  - Duban Yesid Cortes Tabares, 2214644, Estudiante Ing. Electrónica.  
 
 ---
 
-## 🧩 Descripción general
-Este repositorio reúne el conjunto completo de prácticas desarrolladas en el laboratorio de **Comunicaciones II**, cuyo propósito es **aplicar los fundamentos teóricos de la modulación, transmisión y análisis de señales digitales** a través de entornos de simulación en **GNU Radio**.
+# Práctica 6 – Waveforming con Filtro Coseno Alzado  
 
-A lo largo de las prácticas se estudian técnicas de **radio definida por software (SDR)**, **análisis espectral**, **modulación M-PSK y M-QAM**, y **representación de señales en envolvente compleja**, fortaleciendo la relación entre teoría y aplicación en comunicaciones modernas.
+## Descripción general  
+Esta práctica tiene como objetivo la implementación y análisis del **formador de pulsos basado en el Filtro Coseno Alzado (Raised Cosine Filter)** dentro del entorno **GNU Radio Companion (GRC)**. El propósito es estudiar cómo la forma del filtro afecta la eficiencia espectral, la interferencia intersimbólica (ISI) y la calidad general de la señal modulada, tanto en presencia como en ausencia de ruido.  
+
+El laboratorio aborda tanto el **filtro Coseno Alzado (RC)** como su variante **Raíz de Coseno Alzado (RRC)**, comparando su efecto sobre el ancho de banda, el diagrama de ojo, la constelación y la densidad espectral de potencia (PSD).
 
 ---
 
-## 🗂️ Estructura del repositorio
+## Objetivos  
+
+- Practicar los métodos de **waveforming** mediante el uso del filtro **Coseno Alzado y Raíz de Coseno Alzado**.  
+- Verificar los parámetros y características propias de ambos tipos de filtros.  
+- Analizar el **ancho de banda ocupado (BW)** y su dependencia con el factor de roll-off β.  
+- Observar la **Interferencia Intersimbólica (ISI)** mediante el diagrama de ojo.  
+- Evaluar el efecto del **ruido** sobre el desempeño del sistema y la degradación de la constelación.  
+
+---
+
+##  Estructura del repositorio  
 
 | Carpeta / Archivo | Descripción |
 |-------------------|-------------|
-| `/Practica_1/` | Implementación y análisis de un sistema de **radio definida por software (SDR)** utilizando **GNU Radio**. Se introducen los fundamentos del flujo de señal y el manejo de bloques básicos. |
-| `/Practica_2/` | Estudio del **espectro de densidad de potencia (PSD)** de señales aleatorias mediante GNU Radio. Se evalúan métodos de estimación y comparación con modelos teóricos. |
-| `/Practica_3/` | Conversión de **radiofrecuencia a envolvente compleja**, abordando la traslación espectral, el filtrado y la reconstrucción de señales moduladas. |
-| `/Practica_4/` | Simulación de **modulación M-PSK**, analizando la constelación, eficiencia espectral y desempeño frente a ruido AWGN. |
-| `/Practica_5/` | Implementación y evaluación de **modulación M-QAM** para distintos órdenes de modulación (2, 4, 8, 16), comparando desempeño, BER y eficiencia espectral. |
-| `README.md` | Documento principal que describe la estructura, herramientas y objetivos del laboratorio. |
+| `/GNURadio/` | Contiene los archivos `.grc` con los flujogramas de simulación del formador de pulsos y modulación digital. |
+| `/Informe/` | Carpeta que incluye el informe formal con los resultados, gráficas y conclusiones. |
+| `/Practica_6_David/` | Archivos y simulaciones desarrolladas por el integrante David. |
+| `/Practica_6_Duban/` | Archivos y simulaciones desarrolladas por el integrante Duban. |
+| `README.md` | Documento guía que describe la organización y propósito del laboratorio. |
 
 ---
 
-## ⚙️ Herramientas utilizadas
+## Descripción de la práctica  
 
-- **GNU Radio Companion (GRC)** – entorno modular para diseño de sistemas de comunicación digital.  
-- **Linux (Ubuntu)** – sistema operativo base utilizado para las simulaciones.  
-- **Git y GitHub** – herramientas de control de versiones y documentación colaborativa.  
-- **Python** – lenguaje auxiliar para análisis de resultados, visualización y procesamiento de señales.  
+El experimento se centra en el diseño y evaluación de señales moduladas bajo distintos esquemas de **waveforming**, utilizando filtros rectangulares, coseno alzado y raíz de coseno alzado. Se analizan las siguientes configuraciones experimentales:
+
+1. **Forma rectangular sin filtrado**, sin ruido.  
+2. **Forma rectangular con filtrado (BW = Rs)**, observando la aparición de ISI.  
+3. **Coseno alzado con β = 1**, sin ruido — verificación de ancho de banda \( BW = W(1+β) \) con \( W = Rs/2 \).  
+4. **Coseno alzado con β = 0**, sin ruido.  
+5. **Coseno alzado con β = 0.5**, sin ruido.  
+6. **Raíz de coseno alzado con β = 0.5**, sin ruido — comparación del diagrama de ojo con el caso anterior.  
+7. **Repetición de todos los casos anteriores con modulación 16-QAM y presencia de ruido.**
+
+Los resultados incluyen:
+- Señales en el dominio del **tiempo y frecuencia (PSD)**.  
+- **Constelaciones** en el origen y después del canal.  
+- **Diagramas de ojo** que permiten identificar el instante libre de ISI.  
+- Cálculo y comparación del **ancho de banda medido vs teórico**.  
 
 ---
 
-## 🔗 Enlace al repositorio
+## Herramientas utilizadas  
+
+- **GNU Radio Companion (GRC)** – diseño y simulación de sistemas digitales.  
+- **Linux (Ubuntu)** o **Windows** – entorno de ejecución.  
+- **Git y GitHub** – control de versiones y almacenamiento colaborativo.  
+- **Python** – análisis y generación de resultados adicionales.  
+
+---
+
+## Enlace al repositorio  
 
 > [https://github.com/David2204269/CommII_LabB1_G4.git](https://github.com/David2204269/CommII_LabB1_G4.git)
 
----
-
-## 📘 Créditos y propósito académico
-
-Este trabajo fue realizado como parte de las actividades prácticas del curso **Comunicaciones II**,  
-bajo la guía docente de la **Escuela de Ingenierías Eléctrica, Electrónica y de Telecomunicaciones (E3T)** de la **Universidad Industrial de Santander (UIS)**.
-
----
-
-**📅 Periodo académico:** 2025-II  
-**🔬 Grupo:** B1 – Laboratorio de Comunicaciones II
