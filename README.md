@@ -29,6 +29,7 @@ A lo largo de las prácticas se estudian técnicas de **radio definida por softw
 | `/Practica_3/` | Conversión de **radiofrecuencia a envolvente compleja**, abordando la traslación espectral, el filtrado y la reconstrucción de señales moduladas. |
 | `/Practica_4/` | Simulación de **modulación M-PSK**, analizando la constelación, eficiencia espectral y desempeño frente a ruido AWGN. |
 | `/Practica_5/` | Implementación y evaluación de **modulación M-QAM** para distintos órdenes de modulación (2, 4, 8, 16), comparando desempeño, BER y eficiencia espectral. |
+| `/Practica_6/` |Implementación del waveforming digital utilizando filtros de coseno alzado (RC) y raíz de coseno alzado (RRC) en GNU Radio. Se analiza el efecto del roll-off, el ancho de banda y la ISI mediante señales en tiempo, PSD y diagramas de ojo. Incluye pruebas con ruido y modulación 16-QAM para evaluar el desempeño del sistema. |
 | `README.md` | Documento principal que describe la estructura, herramientas y objetivos del laboratorio. |
 
 ---
